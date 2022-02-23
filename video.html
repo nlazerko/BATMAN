@@ -7,7 +7,12 @@
     <title>Batman 2022</title>
 
     <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet"href="style/swiper-bundle.min.css">
     <link rel="stylesheet" href="style/style.css">
+
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
+    
 </head>
 <button class="burger"></button>
 <body>
@@ -42,6 +47,46 @@
     </header>
 
     <main class="main main_slider">
+        <div class="slider-main swiper">
+            <ul class="slider-main__list swiper-wrapper">
+                <li class="slider-main__item swiper-slide">
+                    <video class="slider-main__video" controls poster="video/trailer01.jpg">
+                        <source src="video/trailer01.webm" type="video/webm">
+                        <source src="video/trailer01.mp4" type="video/mp4">
+                    </video>
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <video class="slider-main__video" controls poster="video/trailer02.jpg">
+                        <source src="video/trailer02.webm" type="video/webm">
+                        <source src="video/trailer02.mp4" type="video/mp4">
+                    </video>
+                </li>
+                <li class="slider-main__item swiper-slide">
+                    <video class="slider-main__video" controls poster="video/trailer03.jpg">
+                        <source src="video/trailer03.webm" type="video/webm">
+                        <source src="video/trailer03.mp4" type="video/mp4">
+                    </video>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pagination">
+            <button class="pagination__arrow"></button>
+
+            <div class="slider-thumbs swiper">
+                <ul class="slider-thumbs__list swiper-wrapper">
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="video/trailer01.jpg" alt="превью фото" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="video/trailer02.jpg" alt="превью фото" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                    <li class="slider-thumbs__item swiper-slide">
+                        <img src="video/trailer03.jpg" alt="превью фото" class="slider-thumbs__img" width="260" height="100">
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
