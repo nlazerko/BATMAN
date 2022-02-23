@@ -258,6 +258,9 @@ h1, h2, h3, p {
     background-color: transparent;
     background-image: url('../img/menu.svg');
     border: none;
+    margin-top: 20px;
+    margin-left: 20px;
+    
 }
 
 .navigation {
