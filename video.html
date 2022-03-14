@@ -1,103 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batman 2022</title>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet"href="style/swiper-bundle.min.css">
-    <link rel="stylesheet" href="style/style.css">
+	<link rel="preload" href="fonts/roboto-v29-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin/>
+	<link rel="preload" href="fonts/roboto-v29-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin/>
 
-    <script defer src="js/swiper-bundle.min.js"></script>
-    <script defer src="js/script.js"></script>
-    
+	<link rel="icon" href="img/icon.png" type="image/png">
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/swiper-bundle.min.css">
+	<link rel="stylesheet" href="style/style.css">
+
+	<script src="js/swiper-bundle.min.js" defer></script>
+	<script src="js/script.js" defer></script>
+
+	<title>BATMAN video</title>
 </head>
-<button class="burger"></button>
 <body>
-    <header class="header">
-        <nav class="header__navigation navigation">
-            <button class="navigation__close"></button>
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a class="navigation__link" href="index.html">Главная</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link navigation__link_active">Видео</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="photo.html">Фото</a>
-                </li>
-            </ul>
-            <p class="header__hashtag">#TheBatman</p>
+<header class="header">
+	<button class="burger" id="burger"></button>
 
-            <ul class="header__social social">
-                <li class="social__item">
-                    <a href="" class="social__link social__link_fb"></a>
-                    <a href="" class="social__link social__link_twitter"></a>
-                    <a href="" class="social__link social__link_instagram"></a>
-                </li>
-            </ul>
-        </nav>
-        <div class="mute">
-            <input class="mute__checkbox" type="checkbox" id="mute">
-            <label for="mute" class="mute__label"></label>
-        </div>
-    </header>
+	<nav class="header__navigation navigation">
+		<button class="navigation__close"></button>
+		<ul class="navigation__list">
+			<li class="navigation__item">
+				<a class="navigation__link" href="index.html">Главная</a>
+			</li>
 
-    <main class="main main_slider">
-        <div class="slider-main swiper">
-            <ul class="slider-main__list swiper-wrapper">
-                <li class="slider-main__item swiper-slide">
-                    <video class="slider-main__video" controls poster="video/trailer01.jpg">
-                        <source src="video/trailer01.webm" type="video/webm">
-                        <source src="video/trailer01.mp4" type="video/mp4">
-                    </video>
-                </li>
-                <li class="slider-main__item swiper-slide">
-                    <video class="slider-main__video" controls poster="video/trailer02.jpg">
-                        <source src="video/trailer02.webm" type="video/webm">
-                        <source src="video/trailer02.mp4" type="video/mp4">
-                    </video>
-                </li>
-                <li class="slider-main__item swiper-slide">
-                    <video class="slider-main__video" controls poster="video/trailer03.jpg">
-                        <source src="video/trailer03.webm" type="video/webm">
-                        <source src="video/trailer03.mp4" type="video/mp4">
-                    </video>
-                </li>
-            </ul>
-        </div>
+			<li class="navigation__item">
+				<a class="navigation__link navigation__link_active">Видео</a>
+			</li>
+			<li class="navigation__item">
+				<a class="navigation__link" href="photo.html">Фото</a>
+			</li>
+		</ul>
 
-        <div class="pagination">
-            <button class="pagination__arrow"></button>
+		<p class="header__hashtag">#TheBatman</p>
 
-            <div class="slider-thumbs swiper">
-                <ul class="slider-thumbs__list swiper-wrapper">
-                    <li class="slider-thumbs__item swiper-slide">
-                        <img src="video/trailer01.jpg" alt="превью фото" class="slider-thumbs__img" width="260" height="100">
-                    </li>
-                    <li class="slider-thumbs__item swiper-slide">
-                        <img src="video/trailer02.jpg" alt="превью фото" class="slider-thumbs__img" width="260" height="100">
-                    </li>
-                    <li class="slider-thumbs__item swiper-slide">
-                        <img src="video/trailer03.jpg" alt="превью фото" class="slider-thumbs__img" width="260" height="100">
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </main>
+		<ul class="header__social social">
+			<li class="social__item">
+				<a href="#" class="social__link social__link_fb" aria-label="ссылка facebook">
+					<svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M9.65 21.6v-9.01H7.2V9.348h2.45v-2.77c0-2.178 1.448-4.177 4.784-4.177 1.35 0 2.349.126 2.349.126l-.079 3.029s-1.018-.01-2.13-.01c-1.202 0-1.395.54-1.395 1.434v2.368H16.8l-.158 3.244H13.18V21.6H9.65Z"/></g><defs><clipPath id="a"><path transform="translate(7.2 2.4)" d="M0 0h9.6v19.2H0z"/></clipPath></defs></svg>
+				</a>
+			</li>
+			<li class="social__item">
+				<a href="#" class="social__link social__link_twitter" aria-label="ссылка twitter">
+					<svg width="24" height="24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_234_289)">
+							<path d="M21.3015 6.52138C20.6045 6.83024 19.8557 7.03894 19.0685 7.13327C19.8807 6.64725 20.4884 5.88232 20.7781 4.9812C20.015 5.43448 19.1798 5.75354 18.3088 5.92451C17.7231 5.29914 16.9473 4.88464 16.1019 4.74535C15.2565 4.60607 14.3887 4.74979 13.6334 5.15421C12.878 5.55863 12.2773 6.20112 11.9245 6.98193C11.5717 7.76274 11.4866 8.63818 11.6823 9.47233C10.136 9.39469 8.62334 8.99279 7.24244 8.2927C5.86154 7.59262 4.64328 6.61 3.66672 5.40861C3.3328 5.98461 3.1408 6.65244 3.1408 7.36367C3.14043 8.00395 3.2981 8.63441 3.59983 9.19913C3.90156 9.76386 4.33802 10.2454 4.87047 10.601C4.25296 10.5813 3.64908 10.4145 3.10908 10.1143V10.1644C3.10902 11.0624 3.41965 11.9328 3.98826 12.6278C4.55687 13.3229 5.34844 13.7998 6.22866 13.9777C5.65582 14.1327 5.05524 14.1555 4.47228 14.0444C4.72063 14.8171 5.20438 15.4928 5.85582 15.9769C6.50726 16.461 7.29378 16.7292 8.10525 16.7441C6.72772 17.8255 5.02648 18.4121 3.2752 18.4095C2.96498 18.4096 2.65502 18.3915 2.34692 18.3553C4.12457 19.4982 6.19389 20.1048 8.30727 20.1025C15.4614 20.1025 19.3723 14.1772 19.3723 9.03824C19.3723 8.87129 19.3681 8.70266 19.3606 8.53571C20.1214 7.98556 20.778 7.30431 21.2998 6.52388L21.3015 6.52138Z"/>
+						</g>
+					</svg>
+				</a>
+			</li>
+			<li class="social__item">
+				<a href="#" class="social__link social__link_inst" aria-label="ссылка instagram">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_234_294)">
+							<path d="M12 8.81005C10.2435 8.81005 8.81004 10.2435 8.81004 12C8.81004 13.7566 10.2435 15.19 12 15.19C13.7566 15.19 15.19 13.7566 15.19 12C15.19 10.2435 13.7566 8.81005 12 8.81005ZM21.5676 12C21.5676 10.6791 21.5796 9.37003 21.5054 8.05144C21.4312 6.51986 21.0818 5.16059 19.9619 4.04062C18.8395 2.91826 17.4826 2.57126 15.951 2.49708C14.63 2.42289 13.321 2.43485 12.0024 2.43485C10.6814 2.43485 9.37242 2.42289 8.05382 2.49708C6.52224 2.57126 5.16297 2.92065 4.043 4.04062C2.92064 5.16298 2.57364 6.51986 2.49946 8.05144C2.42527 9.37243 2.43724 10.6814 2.43724 12C2.43724 13.3186 2.42527 14.6301 2.49946 15.9486C2.57364 17.4802 2.92303 18.8395 4.043 19.9595C5.16536 21.0818 6.52224 21.4288 8.05382 21.503C9.37481 21.5772 10.6838 21.5652 12.0024 21.5652C13.3234 21.5652 14.6324 21.5772 15.951 21.503C17.4826 21.4288 18.8419 21.0794 19.9619 19.9595C21.0842 18.8371 21.4312 17.4802 21.5054 15.9486C21.582 14.6301 21.5676 13.321 21.5676 12ZM12 16.9083C9.28387 16.9083 7.0918 14.7162 7.0918 12C7.0918 9.28388 9.28387 7.09181 12 7.09181C14.7162 7.09181 16.9083 9.28388 16.9083 12C16.9083 14.7162 14.7162 16.9083 12 16.9083ZM17.1093 8.03708C16.4751 8.03708 15.963 7.52496 15.963 6.89079C15.963 6.25662 16.4751 5.7445 17.1093 5.7445C17.7435 5.7445 18.2556 6.25662 18.2556 6.89079C18.2558 7.04138 18.2262 7.19052 18.1687 7.32968C18.1112 7.46884 18.0267 7.59528 17.9203 7.70176C17.8138 7.80824 17.6873 7.89267 17.5482 7.95021C17.409 8.00775 17.2599 8.03727 17.1093 8.03708Z"/>
+						</g>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</nav>
 
-    <footer class="footer">
-        <ul class="footer__links">
-            <li><a href="#" class="footer__link">Политика конфиденциальности</a></li>
-            <li><a href="#" class="footer__link">Условия эксплуатации</a></li>
-            <li><a href="#" class="footer__link">Выбор объявлений</a></li>
-            <li><a href="#" class="footer__link">Настройки файлов cookie</a></li>
-        </ul>
+<div class="mute">
+<input type="checkbox" class="mute__checkbox" id="mute">-->
+<label for="mute" class="mute__label">mute</label>-->
+</div>
+</header>
 
-        <p class="footer__copyright">© 2022 WBEI TM & © DC</p>
-    </footer>
+
+<main class="main main_slider">
+	<div class="slider-main swiper">
+		<ul class="slider-main__list swiper-wrapper">
+			<li class="slider-main__item swiper-slide">
+				<video class="slider-main__video" controls poster="video/trailer01.jpg">
+					<source src="video/trailer01.webm" type="video/webm">
+					<source src="video/trailer01.mp4" type="video/mp4">
+				</video>
+			</li>
+			<li class="slider-main__item  swiper-slide">
+				<video class="slider-main__video" controls poster="video/trailer02.jpg">
+					<source src="video/trailer02.webm" type="video/webm">
+					<source src="video/trailer02.mp4" type="video/mp4">
+				</video>
+			</li>
+			<li class="slider-main__item  swiper-slide">
+				<video class="slider-main__video" controls poster="video/trailer03.jpg">
+					<source src="video/trailer03.webm" type="video/webm">
+					<source src="video/trailer03.mp4" type="video/mp4">
+				</video>
+			</li>
+			<li class="slider-main__item  swiper-slide">
+				<video class="slider-main__video" controls poster="video/tizer01.jpg">
+					<source src="video/tizer01.webm" type="video/webm">
+					<source src="video/tizer01.mp4" type="video/mp4">
+				</video>
+			</li>
+			<li class="slider-main__item  swiper-slide">
+				<video class="slider-main__video" controls poster="video/tizer02.jpg">
+					<source src="video/tizer02.webm" type="video/webm">
+					<source src="video/tizer02.mp4" type="video/mp4">
+				</video>
+			</li>
+			<li class="slider-main__item  swiper-slide">
+				<video class="slider-main__video" controls poster="video/tizer03.jpg">
+					<source src="video/tizer03.webm" type="video/webm">
+					<source src="video/tizer03.mp4" type="video/mp4">
+				</video>
+			</li>
+			<li class="slider-main__item  swiper-slide">
+				<video class="slider-main__video" controls poster="video/tizer04.jpg">
+					<source src="video/tizer04.webm" type="video/webm">
+					<source src="video/tizer04.mp4" type="video/mp4">
+				</video>
+			</li>
+		</ul>
+	</div>
+
+	<div class="pagination">
+		<button class="pagination__arrow"></button>
+
+		<div class="slider-thumbs swiper">
+			<ul class="slider-thumbs__list swiper-wrapper">
+				<li class="slider-thumbs__item swiper-slide">
+					<img src="video/trailer01.jpg" alt="превью фото" class="slider-thumbs__img" width="260" height="100">
+				</li>
+				<li class="slider-thumbs__item swiper-slide">
+					<img src="video/trailer02.jpg" alt="превью фото" class="slider-thumbs__img" width="260" height="100">
+				</li>
+				<li class="slider-thumbs__item swiper-slide">
+					<img src="video/trailer03.jpg" alt="превью фото" class="slider-thumbs__img" width="260" height="100">
+				</li>
+				<li class="slider-thumbs__item swiper-slide">
+					<img src="video/tizer01.jpg" alt="превью фото" class="slider-thumbs__img" width="260" height="100">
+				</li>
+				<li class="slider-thumbs__item swiper-slide">
+					<img src="video/tizer02.jpg" alt="превью фото" class="slider-thumbs__img" width="260" height="100">
+				</li>
+				<li class="slider-thumbs__item swiper-slide">
+					<img src="video/tizer03.jpg" alt="превью фото" class="slider-thumbs__img" width="260" height="100">
+				</li>
+				<li class="slider-thumbs__item swiper-slide">
+					<img src="video/tizer04.jpg" alt="превью фото" class="slider-thumbs__img" width="260" height="100">
+				</li>
+			</ul>
+		</div>
+	</div>
+
+</main>
+
+<footer class="footer">
+	<ul class="footer__links">
+		<li><a href="#" class="footer__link">Политика конфиденциальности</a></li>
+		<li><a href="#" class="footer__link">Условия эксплуатации</a></li>
+		<li><a href="#" class="footer__link">Выбор объявлений</a></li>
+		<li><a href="#" class="footer__link">Настройки файлов cookie</a></li>
+	</ul>
+
+	<p class="footer__copyright">© 2022 WBEI TM & © DC</p>
+</footer>
 </body>
 </html>
